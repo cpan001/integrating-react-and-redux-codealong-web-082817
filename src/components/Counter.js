@@ -7,7 +7,7 @@ export default props => {
   return (
     <div>
       <button onClick={handleOnClick}>Click Me</button>
-      <div>0</div>
+      <div>{props.store.getState().count}</div>
     </div>
   );
 };
